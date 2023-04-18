@@ -73,16 +73,21 @@ public class Week16 {
         }
         return sumOfMatrix;
     }
-    public double[][] modelExample(double[][] array2d){
+    public double[][] modelExampleFive(double[][] array2d){
         double[][] modelExample = new double[array2d.length][1];
         for (int index = 0; index < array2d.length; index++) {
             array2d[index][0] = 1;
         }
         return array2d;
     }
-
     public double[][] linearClassifier(double[][] array2dX, double[] array2dW) {
-        return array2dX;
+        if (array2dX.length < 1) return array2dX;
+        double[][] linearClassifier = new double[array2dX.length][1];
+
+        for (int columIndex = 0; columIndex < linearClassifier.length; columIndex++) {
+            linearClassifier[columIndex][0] = array2dX[columIndex][0] * array2dW[0];
+        }
+        return linearClassifier;
     }
 
     /*
