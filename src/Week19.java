@@ -1,7 +1,7 @@
 public class Week19 {
     private Integer task = 1;
     public double cosinusSteigung(double x, double eps) {
-        return x + eps;
+        return 2*x + eps;
     }
     public void test() {
         printHeading();
