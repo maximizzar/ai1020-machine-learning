@@ -11,7 +11,7 @@ public class Week20 {
         return new double[] {5,2};
     }
     public double[] gradf(double[] array) {
-        java.util.Arrays.setAll(array, i -> Math.pow(array[i], 3) * 3);
+        java.util.Arrays.setAll(array, i -> Math.pow(array[i], 3) * 4);
         return array;
     }
     public void test() {
