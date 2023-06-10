@@ -5,5 +5,6 @@ public class Main {
         new Week18().test();
         new Week19().test();
         new Week20().test();
+        new Week23().test();
     }
 }
